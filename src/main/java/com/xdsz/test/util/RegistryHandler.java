@@ -4,13 +4,14 @@ import com.xdsz.test.Test;
 import com.xdsz.test.armor.ModArmorMaterial;
 import com.xdsz.test.blocks.BlockItemBase;
 import com.xdsz.test.blocks.SapphireOre;
-import com.xdsz.test.fluids.ModFluids;
+import com.xdsz.test.fluids.TestFluids;
 import com.xdsz.test.items.ItemBase;
 import com.xdsz.test.items.PoisonApple;
 import com.xdsz.test.blocks.SapphireBlock;
 
 import com.xdsz.test.tools.ModItemTier;
 import net.minecraft.block.Block;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
@@ -24,9 +25,13 @@ public class RegistryHandler {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Test.MOD_ID);
 
 
+    //@
+    public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Test.MOD_ID);
+
     public static void init(){
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        TestFluids.register(FMLJavaModLoadingContext.get().getModEventBus());//@
     }
 
 
@@ -49,9 +54,6 @@ public class RegistryHandler {
     public static final RegistryObject<Item> SAPPHIRE_ORE_ITEM = ITEMS.register("sapphire_ore",
             () -> new BlockItemBase(SAPPHIRE_ORE.get()));
 
-    //@
-    public static final RegistryObject<Item> HONEY_BUCKET = ITEMS.register("honey_bucket",
-            () -> new BucketItem(() -> ModFluids.HONEY_FLUID.get(), new Item.Properties().maxStackSize(1).group(Test.TAB)));
 
 
 
@@ -90,5 +92,9 @@ public class RegistryHandler {
     //毒苹果
     public static final RegistryObject<PoisonApple> POISON_APPLE = ITEMS.register("poison_apple", PoisonApple::new);
 
+
+    //@
+    public static final RegistryObject<Item> HONEYTEST_BUCKET = ITEMS.register("honeytest_bucket",
+            () -> new BucketItem(()-> TestFluids.HONEYTEST_FLUID.get(), new Item.Properties().maxStackSize(1).group(Test.TAB)));
 
 }
