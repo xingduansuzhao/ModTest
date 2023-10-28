@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xdx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "tag": "test:gems"
+    },
+    "d":
+    {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "result":
+  {
+    "item": "test:sapphire_block",
+    "count": 1
+  }
+}

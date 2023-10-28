@@ -1,0 +1,26 @@
+{
+  "item.test.poison_apple": "毒苹果",
+
+  "item.test.sapphire": "蓝宝石",
+
+  "item.test.sapphire_sword": "蓝宝石剑",
+  "item.test.sapphire_axe": "蓝宝石斧",
+  "item.test.sapphire_pickaxe": "蓝宝石镐",
+  "item.test.sapphire_shovel": "蓝宝石铲",
+  "item.test.sapphire_hoe": "蓝宝石锄",
+
+
+  "item.test.honey_bucket": "蜂蜜桶",
+  "item.test.honey": "蜂蜜",
+
+
+  "item.test.sapphire_helmet": "蓝宝石头盔",
+  "item.test.sapphire_chestplate": "蓝宝石胸甲",
+  "item.test.sapphire_leggings": "蓝宝石护腿",
+  "item.test.sapphire_boots": "蓝宝石靴子",
+
+  "itemGroup.testTab": "蓝宝石项",
+
+  "block.test.sapphire_block": "蓝宝石块",
+  "block.test.sapphire_ore": "蓝宝石矿石"
+}
