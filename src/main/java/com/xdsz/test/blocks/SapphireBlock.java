@@ -13,7 +13,7 @@ public class SapphireBlock extends Block {
                 .sound(SoundType.METAL)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(2)
-                .setRequiresTool()
-                .setLightLevel(value -> 15));
+                /*.setRequiresTool()
+                .setLightLevel(value -> 15)*/     );
     }
 }

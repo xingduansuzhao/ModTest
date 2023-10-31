@@ -1,0 +1,10 @@
+{
+  "cai_xukun": {
+    "sounds": [
+      {
+        "name": "test:cai_xukun",
+        "stream": true
+      }
+    ]
+  }
+}

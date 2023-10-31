@@ -16,7 +16,7 @@ public class SapphireOre extends OreBlock {
                 .sound(SoundType.STONE)
                 .harvestTool(ToolType.PICKAXE)
                 .harvestLevel(2)
-                .setRequiresTool());
+                /*.setRequiresTool()*/     );
     }
 
     @Override
